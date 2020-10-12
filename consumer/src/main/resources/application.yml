@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: 192.168.99.101:9092
+    consumer:
+      group-id: twitterworld
+    template:
+      default-topic: tweets
+
+server:
+  port: 8082

@@ -1,0 +1,21 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.twitter.consumer" level="info"/>
+
+
+
+    <logger name="org.apache" level="info"/>
+    <logger name="org.apache.spark" level="info"/>
+    <logger name="org.spark_project" level="info"/>
+    <logger name="org.springframework" level="info"/>
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
